@@ -3,7 +3,7 @@ package quota_calculator;
 import java.util.Scanner;
 
 public class QuotaCalculator {
-    private double avg_sales = 10.0;
+    private int avg_sales = 10;
     private String message;
     //private StringBuilder message = new StringBuilder();
 
@@ -14,7 +14,7 @@ public class QuotaCalculator {
         scanner.close();
 
         if (no_of_sales < avg_sales) {
-            double sales_short = avg_sales - no_of_sales;
+            int sales_short = avg_sales - no_of_sales;
             message = sales_short == 1 ? "You are " + sales_short + " sale short" : "You are " + sales_short + " sales short";
         } else {
             message = "Congratulations! You met your target for the week.";
