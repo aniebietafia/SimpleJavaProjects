@@ -12,7 +12,7 @@ public class InputValidation {
         Scanner scanner = new Scanner(System.in);
         int hoursWorked = scanner.nextInt();
 
-        while (hoursWorked > maxHours) {
+        while (hoursWorked > maxHours || hoursWorked < 0) {
             System.out.println("Invalid entry.");
             System.out.println("How many hours have you worked this week?");
             hoursWorked = scanner.nextInt();
