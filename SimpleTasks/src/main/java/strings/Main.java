@@ -7,5 +7,9 @@ public class Main {
         System.out.println(textProcessor.letterCount("aniebiet"));
         System.out.println("*******************************");
         System.out.println(textProcessor.wordCount("Java is super cool"));
+        System.out.println("*******************************");
+        System.out.println(textProcessor.backwardString("aniebiet imo afia"));
+        System.out.println("*******************************");
+        System.out.println(textProcessor.jumbledString("AriseAndShineForYourLightHasCome"));
     }
 }
