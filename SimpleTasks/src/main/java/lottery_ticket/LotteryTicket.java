@@ -11,9 +11,9 @@ public class LotteryTicket {
         int[] ticket = new int[LENGTH];
         Random random = new Random();
         for (int i = 0; i < LENGTH; i++) {
-            int randomNumber = random.nextInt(MAX_TICKET_NUMBER);
+            int randomNumber = random.nextInt(MAX_TICKET_NUMBER + 1);
             while (searchArray(ticket, randomNumber)) {
-                randomNumber = random.nextInt(MAX_TICKET_NUMBER);
+                randomNumber = random.nextInt(MAX_TICKET_NUMBER + 1);
             }
             ticket[i] = randomNumber;
         }
