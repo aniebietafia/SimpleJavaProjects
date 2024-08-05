@@ -1,8 +1,9 @@
 package objects;
 
 public class Rectangle {
-    private int length;
-    private int width;
+    protected int length;
+    protected int width;
+    protected int sides = 4;
 
     public Rectangle() {
         setLength(0);
@@ -14,20 +15,28 @@ public class Rectangle {
         getWidth(width);
     }
 
-    public void setWidth(int width) {
-        this.width = width;
+    public int getLength(int length) {
+        return length;
     }
 
     public void setLength(int length) {
         this.length = length;
     }
 
-    private int getWidth(int width) {
-        return this.length;
+    public int getWidth(int width) {
+        return width;
     }
 
-    private int getLength(int length) {
-        return this.width;
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int getSides() {
+        return sides;
+    }
+
+    public void setSides(int sides) {
+        this.sides = sides;
     }
 
     public double calculateArea() {
