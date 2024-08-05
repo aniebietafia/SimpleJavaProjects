@@ -42,4 +42,8 @@ public class Rectangle {
     public double calculateArea() {
         return length * width;
     }
+
+    public void print() {
+        System.out.println("In the parent class: Rectangle");
+    }
 }
