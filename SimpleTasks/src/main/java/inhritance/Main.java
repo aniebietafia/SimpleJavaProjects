@@ -7,10 +7,14 @@ public class Main {
 //        Square square = new Square();
 //        square.print("Square");
         Dog captain = new Dog();
-        captain.makeSound();
+        Animal roost = new Cat();
+        //captain.makeSound();
 
         // polymorphism
-        Animal billows = new Dog();
-        billows.makeSound();
+//        Animal billows = new Dog();
+//        billows.makeSound();
+        Feed animalFeed = new Feed();
+        animalFeed.feedAnimal(captain);
+        animalFeed.feedAnimal(roost);
     }
 }
