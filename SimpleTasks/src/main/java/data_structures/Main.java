@@ -6,5 +6,6 @@ public class Main {
 
         collections.setCollection();
         collections.listCollection();
+        collections.queueCollection();
     }
 }

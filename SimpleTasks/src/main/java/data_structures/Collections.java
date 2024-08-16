@@ -1,9 +1,6 @@
 package data_structures;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Collections {
 
@@ -29,5 +26,18 @@ public class Collections {
 
         System.out.println("List fruits collection: " + fruits);
         System.out.println("Size of fruits: " + fruits.size());
+    }
+
+    public void queueCollection() {
+        Queue fruits = new LinkedList();
+
+        fruits.add("Cherry");
+        fruits.add("Strawberry");
+        fruits.add("Lemon");
+        fruits.add("Mango");
+        fruits.add("Topaz");
+
+        System.out.println("Peek: " + fruits.peek());
+        System.out.println("Queue Collections: " + fruits);
     }
 }
