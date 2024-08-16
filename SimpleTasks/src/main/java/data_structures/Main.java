@@ -5,5 +5,6 @@ public class Main {
         Collections collections = new Collections();
 
         collections.setCollection();
+        collections.listCollection();
     }
 }
