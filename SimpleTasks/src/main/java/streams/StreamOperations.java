@@ -1,6 +1,8 @@
 package streams;
 
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class StreamOperations {
     List<String> veggies = List.of(
@@ -41,5 +43,16 @@ public class StreamOperations {
                 .reduce("", (a, b) -> a + " | " + b);
 
         System.out.println(output);
+    }
+
+    public void collectDemo() {
+        Set<String> stringSet = veggies.stream()
+                .filter(v -> v.startsWith("c"))
+                .collect(Collectors.toSet());
+
+        stringSet.forEach(element -> {
+            String output = element.substring(0, 1).toUpperCase() + element.substring(1);
+            System.out.println(output);
+        });
     }
 }
