@@ -5,7 +5,7 @@ import java.util.*;
 public class Collections {
 
     public void setCollection(){
-        Set fruits = new HashSet();
+        Set<String> fruits = new HashSet<>();
 
         fruits.add("Banana");
         fruits.add("Pineapple");
@@ -13,16 +13,15 @@ public class Collections {
         fruits.add("Orange");
         fruits.add("Garden Egg");
 
-        var i = fruits.iterator();
-        while (i.hasNext()) {
-            System.out.println(i.next());
+        for (String fruit : fruits) {
+            System.out.println(fruit);
         }
 
         System.out.println("Fruits collection: " + fruits);
     }
 
     public void listCollection() {
-        List fruits = new ArrayList();
+        List<String> fruits = new ArrayList<>();
         fruits.add("Banana");
         fruits.add("Pineapple");
         fruits.add("Apple");
@@ -34,7 +33,7 @@ public class Collections {
     }
 
     public void queueCollection() {
-        Queue fruits = new LinkedList();
+        Queue<String> fruits = new LinkedList<>();
 
         fruits.add("Cherry");
         fruits.add("Strawberry");
@@ -47,7 +46,7 @@ public class Collections {
     }
 
     public void mapCollection() {
-        Map countryCapital = new HashMap();
+        Map<Object, Object> countryCapital = new HashMap<>();
 
         countryCapital.put("Nigeria", "Abuja (FCT)");
         countryCapital.put("England", "London");
